@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clean Redirect Page</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background-image: url('images/backgroundcartel.png');
+      background-size: 50% 50%;
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:grid;
+      place-items:center;
+      padding:32px;
+    }
+
+    .card{
+      width:100%;
+      max-width:720px;
+      background: transparent;
+      backdrop-filter: blur(20px);
+      border-radius:12px;
+      box-shadow: 0 8px 30px rgba(15,23,42,0.08);
+      padding:40px;
+      border:10px solid rgba(15,23,42,0.04);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:18px;
+      justify-content:center; /* centers logo + text */
+      flex-direction:column; /* stacks logo on top */
+      text-align:center;
+    }
+
+    header img{
+      width:400px; /* adjust logo size here */
+      height:200px;
+      border-radius:50%; /* optional: make it round */
+    }
+
+    h1{color: white;}
+    p.lead{color: white;margin-top:8px;line-height:1.45}
+
+    .actions{
+      margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;
+    }
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 18px;border-radius:10px;font-weight:600;text-decoration:none;
+      border:1px solid transparent;cursor:pointer;transition:all .18s ease;
+    }
+
+    .btn-primary{
+      background:linear-gradient(90deg,#2563eb,#06b6d4);
+      color:white;
+    }
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(3,105,161,0.12)}
+
+    .foot{margin-top:18px;color:#64748b;font-size:13px}
+
+    @media (max-width:480px){
+      .card{padding:22px}
+      h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <img src="images/logo.png">
+      <div>
+        <h1>CARTEL CLUB RECRUITMENT FORM</h1>
+        <p class="lead">Fill up the form and kindly wait on your Roblox or Discord account when you're qualified.!</p>
+      </div>
+    </header>
+
+    <section class="actions" aria-label="Primary actions">
+      <a class="btn btn-primary" href="https://forms.gle/X4y33wyXmNJVxRRH9" target="_blank" rel="noopener noreferrer" role="button" aria-label="Open Google Forms">Join Here!!</a>
+    </section>
+  </main>
+</body>
+</html>
